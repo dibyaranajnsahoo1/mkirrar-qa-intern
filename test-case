@@ -1,0 +1,146 @@
+Test Assessment for QA Interns 
+
+Test Document:
+Jewelry Try-On Website
+Test URL: https://sakshi.mirrar.com/
+
+High-Level Test Cases:
+
+Link Testing:
+Verify all links in the application, including navigation links, social media links, and external links.
+Ensure that clicking on each link takes the user to the correct destination.
+
+Button Functionality:
+Test all buttons in the application, including those on the homepage, jewelry try-on page, and any other relevant pages.
+Confirm that buttons respond appropriately to clicks and perform the expected actions.
+
+Jewelry Try-On:
+Verify the virtual try-on functionality for different types of jewelry (rings, necklaces, earrings).
+Check that the try-on experience closely mimics a real-life try-on in terms of size, placement, and appearance.
+
+Mode Testing:
+Test the try-on functionality in all three modes: Camera, Studio, and Model.
+Confirm that users can seamlessly switch between modes without any glitches or disruptions.
+
+Negative Scenarios:
+Test the application's response to negative scenarios, such as uploading incompatible image formats, trying to try-on incompatible jewelry types, or performing actions out of sequence.
+Ensure that error messages are clear, informative, and guide the user on how to correct the issue.
+
+
+>(  Eyewear Overlay Misalignment in Studio Mode >
+
+Steps to Reproduce:
+
+Access the "Try-On" section of the application.
+Select "Studio" mode.
+Upload a user-provided image for a virtual eyewear try-on.
+Choose an eyewear item with a distinctive shape or design.
+Attempt to virtually try on the selected eyewear.
+
+Expected Result:
+The eyewear should align correctly with the user-uploaded image, providing an accurate
+representation of how the eyewear would look in real life.
+
+Actual Result:
+The eyewear overlay is misaligned with the user's face in the uploaded image.
+It appears skewed, resulting in an inaccurate representation of how the eyewear would fit.
+
+***************************************************************
+
+>( Virtual Jewelry Try-On Fails in Camera Mode )
+
+Steps to Reproduce:
+
+Navigate to the "Try-On" section of the application.
+Select the "Camera" mode.
+Allow camera access when prompted.
+Choose a jewelry item for try-on.
+Attempt to virtually try on the jewelry.
+Expected Result:
+The virtual try-on should display the selected jewelry item accurately using the device's camera.
+
+Actual Result:
+The camera feed freezes, and the selected jewelry item is not displayed on the user's image.
+ The virtual try-on in camera mode is not functioning as expected.
+
+*****************************************************************
+
+>( Pendant Set Rendering Issue in Model Mode )
+
+Steps to Reproduce:
+
+Open the "Try-On" section of the application.
+Select "Model" mode for virtual try-on.
+Choose a pendant set with intricate details and distinct elements.
+Pick a predefined model image for the try-on.
+Attempt to virtually try on the selected pendant set.
+Expected Result:
+The pendant set should be accurately rendered on the model image, displaying detailed elements and proper placement.
+
+Actual Result:
+The pendant set appears distorted and pixelated on the model image. Fine details are lost, and the overall rendering is of low quality, 
+failing to provide an accurate representation of the pendant set.
+
+******************************************************************
+
+>( Ring RDRING2 Not Visible in Trying Mode )
+
+Problem -( Critical )
+
+Steps to Reproduce:
+
+Navigate to the "Try-On" section of the application.
+Select the ring set containing the specific ring named "RDRING2."
+Enter any of the virtual try-on modes (Camera, Studio, or Model).
+Choose a hand or model for the ring try-on.
+Attempt to virtually try on the specific ring "RDRING2."
+Expected Result:
+The ring "RDRING2" should be clearly visible and properly rendered on the selected hand or model during the try-on process.
+
+Actual Result:
+The ring "RDRING2" is not visible during the try-on mode. It does not appear on the selected hand or model, making it impossible for users to see how the specific ring looks on them.
+
+
+********************************************************************
+
+>( Pendant Sets Images Not Visible in Camera Mode)
+
+Problem-( Critical )
+
+Steps to Reproduce:
+
+Navigate to the "Try-On" section of the application.
+Select "Camera" mode for virtual try-on.
+Choose a pendant set for try-on.
+Enable the device camera for the try-on process.
+Attempt to virtually try on the selected pendant set.
+Expected Result:
+The camera should capture the user's image, and the selected pendant set should be clearly visible and properly rendered on the captured image.
+
+Actual Result:
+The camera feed displays the user's image, but the selected pendant set is not visible. It does not appear on the captured image during the try-on process in camera mode.
+
+Screenshots/Video:
+Attach screenshots or a video recording of the issue, illustrating the absence of the pendant set on the user's captured image in camera mode.
+
+
+********************************************************************
+
+
+>( Bracelet Image Misfit on Virtual Try-On )
+
+Steps to Reproduce:
+
+Navigate to the "Try-On" section of the application.
+Select a bracelet set containing an image copied from the internet.
+Enter any of the virtual try-on modes (Camera, Studio, or Model).
+Choose a hand or model for the bracelet try-on.
+Attempt to virtually try on the bracelet set with the internet-copied image.
+Expected Result:
+The bracelet image should fit appropriately on the selected hand or model, providing an accurate representation of how the bracelet set would look in real life.
+
+Actual Result:
+The bracelet image appears distorted, misfitting on the selected hand or model. It is evident that the image has been copied from the internet without proper resizing or adaptation, resulting in an unrealistic representation of the bracelet set during the virtual try-on.
+
+
+********************************************************************
