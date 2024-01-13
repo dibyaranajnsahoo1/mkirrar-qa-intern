@@ -1,7 +1,6 @@
 Test Assessment for QA Interns 
 
-Test Document:
-Jewelry Try-On Website
+Test Document: Jewelry Try-On Website
 Test URL: https://sakshi.mirrar.com/
 
 High-Level Test Cases:
@@ -31,11 +30,11 @@ Ensure that error messages are clear, informative, and guide the user on how to 
 
 Steps to Reproduce:
 
-Access the "Try-On" section of the application.
-Select "Studio" mode.
-Upload a user-provided image for a virtual eyewear try-on.
-Choose an eyewear item with a distinctive shape or design.
-Attempt to virtually try on the selected eyewear.
+* Access the "Try-On" section of the application.
+* Select "Studio" mode.
+* Upload a user-provided image for a virtual eyewear try-on.
+* Choose an eyewear item with a distinctive shape or design.
+* Attempt to virtually try on the selected eyewear.
 
 Expected Result:
 The eyewear should align correctly with the user-uploaded image, providing an accurate
@@ -51,11 +50,12 @@ It appears skewed, resulting in an inaccurate representation of how the eyewear 
 
 Steps to Reproduce:
 
-Navigate to the "Try-On" section of the application.
-Select the "Camera" mode.
-Allow camera access when prompted.
-Choose a jewelry item for try-on.
-Attempt to virtually try on the jewelry.
+* Navigate to the "Try-On" section of the application.
+* Select the "Camera" mode.
+* Allow camera access when prompted.
+* Choose a jewelry item for try-on.
+* Attempt to virtually try on the jewelry.
+
 Expected Result:
 The virtual try-on should display the selected jewelry item accurately using the device's camera.
 
@@ -69,11 +69,12 @@ The camera feed freezes, and the selected jewelry item is not displayed on the u
 
 Steps to Reproduce:
 
-Open the "Try-On" section of the application.
-Select "Model" mode for virtual try-on.
-Choose a pendant set with intricate details and distinct elements.
-Pick a predefined model image for the try-on.
-Attempt to virtually try on the selected pendant set.
+* Open the "Try-On" section of the application.
+* Select "Model" mode for virtual try-on.
+* Choose a pendant set with intricate details and distinct elements.
+* Pick a predefined model image for the try-on.
+* Attempt to virtually try on the selected pendant set.
+
 Expected Result:
 The pendant set should be accurately rendered on the model image, displaying detailed elements and proper placement.
 
@@ -89,11 +90,12 @@ Problem -( Critical )
 
 Steps to Reproduce:
 
-Navigate to the "Try-On" section of the application.
-Select the ring set containing the specific ring named "RDRING2."
-Enter any of the virtual try-on modes (Camera, Studio, or Model).
-Choose a hand or model for the ring try-on.
-Attempt to virtually try on the specific ring "RDRING2."
+* Navigate to the "Try-On" section of the application.
+* Select the ring set containing the specific ring named "RDRING2."
+* Enter any of the virtual try-on modes (Camera, Studio, or Model).
+* Choose a hand or model for the ring try-on.
+* Attempt to virtually try on the specific ring "RDRING2."
+
 Expected Result:
 The ring "RDRING2" should be clearly visible and properly rendered on the selected hand or model during the try-on process.
 
@@ -109,11 +111,12 @@ Problem-( Critical )
 
 Steps to Reproduce:
 
-Navigate to the "Try-On" section of the application.
-Select "Camera" mode for virtual try-on.
-Choose a pendant set for try-on.
-Enable the device camera for the try-on process.
-Attempt to virtually try on the selected pendant set.
+* Navigate to the "Try-On" section of the application.
+* Select "Camera" mode for virtual try-on.
+* Choose a pendant set for try-on.
+* Enable the device camera for the try-on process.
+* Attempt to virtually try on the selected pendant set.
+
 Expected Result:
 The camera should capture the user's image, and the selected pendant set should be clearly visible and properly rendered on the captured image.
 
@@ -131,11 +134,12 @@ Attach screenshots or a video recording of the issue, illustrating the absence o
 
 Steps to Reproduce:
 
-Navigate to the "Try-On" section of the application.
-Select a bracelet set containing an image copied from the internet.
-Enter any of the virtual try-on modes (Camera, Studio, or Model).
-Choose a hand or model for the bracelet try-on.
-Attempt to virtually try on the bracelet set with the internet-copied image.
+* Navigate to the "Try-On" section of the application.
+* Select a bracelet set containing an image copied from the internet.
+* Enter any of the virtual try-on modes (Camera, Studio, or Model).
+* Choose a hand or model for the bracelet try-on.
+* Attempt to virtually try on the bracelet set with the internet-copied image.
+
 Expected Result:
 The bracelet image should fit appropriately on the selected hand or model, providing an accurate representation of how the bracelet set would look in real life.
 
@@ -144,3 +148,107 @@ The bracelet image appears distorted, misfitting on the selected hand or model. 
 
 
 ********************************************************************
+
+
+>(Ring Set Image Misfit on Virtual Try-On )
+
+Steps to Reproduce:
+
+* Navigate to the "Try-On" section of the application.
+* Select a ring set containing an image copied from the internet.
+* Enter any of the virtual try-on modes (Camera, Studio, or Model).
+* Choose a hand or model for the ring set try-on.
+* Attempt to virtually try on the ring set with the internet-copied image.
+
+Expected Result:
+The ring set image should fit appropriately on the selected hand or model, providing an accurate representation of how the rings would look in real life.
+
+Actual Result:
+The ring set image appears distorted, misfitting on the selected hand or model. It is evident that the image has been copied from the internet without proper resizing or adaptation, resulting in an unrealistic representation of the ring set during the virtual try-on.
+
+
+**********************************************************************
+
+>( Excessive Zoom in Model Mode Impairs Image Visibility )
+
+
+Steps to Reproduce:
+
+* Access the "Try-On" section of the application.
+* Select "Model" mode for virtual try-on.
+* Choose a ring or bracelet set for try-on.
+* Pick a predefined model image for the try-on.
+* Observe the level of zoom applied to the model image during the virtual try-on.
+
+Expected Result:
+The model image should be visible clearly without excessive zoom, allowing users to accurately assess the appearance of the selected ring or bracelet set.
+
+Actual Result:
+The model image is excessively zoomed, making it difficult for users to see the details of the selected ring or bracelet set. The zoom level is so high that the image appears pixelated and unclear.
+
+**********************************************************************
+
+>( Mangalsutra Set Image Misfit on Virtual Try-On )
+
+Steps to Reproduce:
+
+* Open the application on an Android mobile device.
+* Navigate to the "Try-On" section.
+* Select a Mangalsutra set containing an image copied from the internet.
+* Enter any of the virtual try-on modes (Camera, Studio, or Model).
+* Choose a hand or model for the Mangalsutra set try-on.
+* Attempt to virtually try on the Mangalsutra set with the internet-copied image.
+
+Expected Result:
+The Mangalsutra set image should fit appropriately on the selected hand or model, providing an accurate representation of how the Mangalsutra would look in real life.
+
+Actual Result:
+The Mangalsutra set image appears distorted, misfitting on the selected hand or model. The image has been copied from the internet without proper resizing or adaptation, resulting in an unrealistic representation of the Mangalsutra set during the virtual try-on on the Android mobile device.
+
+
+********************************************************************
+
+
+>( Slow Image Loading Speed During Virtual Try-On )
+
+Steps to Reproduce:
+
+* Open the application on any supported device.
+* Navigate to the "Try-On" section.
+* Choose any virtual try-on mode (Camera, Studio, or Model).
+* Select a jewelry item (e.g., ring, bracelet, necklace) for virtual try-on.
+* Observe the loading speed of the images during the try-on process.
+
+Expected Result:
+Images should load quickly and seamlessly, providing a smooth virtual try-on experience for users.
+
+Actual Result:
+Images load slowly, causing delays and impacting the user experience during the virtual try-on. The slow loading speed hinders the real-time visualization of the selected jewelry items.
+
+
+********************************************************************
+
+
+>( Necklace Image Misfit on Virtual Try-On (Android Mobile) )
+
+Steps to Reproduce:
+
+* Open the application on an Android mobile device.
+* Navigate to the "Try-On" section.
+* Select a necklace containing an image copied from the internet.
+* Enter any of the virtual try-on modes (Camera, Studio, or Model).
+* Choose a neck or model for the necklace try-on.
+*Attempt to virtually try on the necklace with the internet-copied image.
+
+Expected Result:
+The necklace image should fit appropriately on the selected neck or model, providing an accurate representation of how the necklace would look in real life.
+
+Actual Result:
+The necklace image appears distorted, misfitting on the selected neck or model. The image has been copied from the internet without proper resizing or adaptation, resulting in an unrealistic representation of the necklace during the virtual try-on on the Android mobile device.
+
+
+**Try-On Modes: **
+Tested the try-on functionality in Camera, Studio, and Model modes. Switch between modes and verify transitions. Deny camera permissions and observe system response.
+Uploaded an image in an unsupported format for model images. 
+Bug Reporting: Bug : None Expected Result: The camera feed should initialize, and the selected jewelry item should be visible on the user during the try-on process in Camera mode.
+Browser and Device Compatibility: Tested the website on different web browsers (e.g., Chrome, Firefox, Safari) and devices (desktop, tablet, mobile) to ensure compatibility.
